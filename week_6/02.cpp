@@ -21,6 +21,6 @@ int main() {
 		}
 		i++;
 	}
-	printf("Amount of link : %d",count);
+	printf("Amount of Tag : %d",count);
 	return 0;
 }
