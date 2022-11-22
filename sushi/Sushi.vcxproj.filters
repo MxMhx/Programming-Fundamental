@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\font">
+      <UniqueIdentifier>{bc592f0a-13ef-4053-8e72-b183865a02ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\images">
+      <UniqueIdentifier>{6c0b0197-dfac-4097-b1f1-a6574d15ff05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\enemybullet">
+      <UniqueIdentifier>{a112ca4e-814d-464c-9c64-6de1714d1d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\images\menu">
+      <UniqueIdentifier>{ac3afad5-a8c9-427a-b506-34e05452f168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sounds">
+      <UniqueIdentifier>{636f800d-131d-4a77-a6a3-22336fa2df9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Bullet.h">
+      <Filter>Header Files\enemybullet</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>Header Files\enemybullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\enemybullet</Filter>
+    </ClInclude>
+    <ClInclude Include="gamewindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\background.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\bento.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\bullet_d.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\bullet_l.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\bullet_r.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\bullet_u.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\enemy.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\fight_sword.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\fire_trap.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\ground.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\ground_2.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\ground_2long.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\heart.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\heart_null.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\idle w gun.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\idle.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\lever.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\manysushsi.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_RiceRollSalmon.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\spritesheet.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\sword.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\gun.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\gear.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\high-score.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\wink.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\enemysheet.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\__Bat02_Fly_000-sheet.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\shooter.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\meteor\Meteor1-sheet.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\red_fireball-sheet.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\exit.png">
+      <Filter>Resource Files\images\menu</Filter>
+    </Image>
+    <Image Include="images\playbutton.png">
+      <Filter>Resource Files\images\menu</Filter>
+    </Image>
+    <Image Include="images\score.png">
+      <Filter>Resource Files\images\menu</Filter>
+    </Image>
+    <Image Include="images\mainmenu.png">
+      <Filter>Resource Files\images\menu</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\jump - gun.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\Sprite_sushi\jump - sword.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="images\resume.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="font\Minecraft.ttf">
+      <Filter>Resource Files\font</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ScoreBoard.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sounds\click.wav">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\hit.mp3">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\nanou.mp3">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\gunshot_2.wav">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\fencing.wav">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\hit.wav">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+    <Media Include="sounds\bgmusic1.wav">
+      <Filter>Resource Files\sounds</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

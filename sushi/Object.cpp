@@ -17,9 +17,15 @@ GameSheet::GameSheet(std::string textureSource, float posx, float posy, int x, i
 	sprite.setTextureRect(spriterect);
 	sprite.setTexture(texture);
 	sprite.setPosition(pos);
+	shape.setFillColor(sf::Color::Transparent);
+	float position_x = (width * 2) / 4;
+	float position_y = (height * 2) / 4;
+	shape.setPosition(sf::Vector2f(position_x + posx, position_y + posy));
+	shape.setSize(sf::Vector2f(position_x, position_y));
 }
 
-FontText::FontText(std::string fontSource, std::string textSource, float x, float y, sf::Color color) {
+FontText::FontText(std::string fontSource, std::string textSource, float x, float y, sf::Color color, int size) {
+	text.setCharacterSize(size);
 	pos = sf::Vector2f(x, y);
 	font.loadFromFile(fontSource);
 	text.setFont(font);

@@ -5,14 +5,15 @@ class animation {
 public:
 	sf::Clock clock;
 	int topper = 608;
-	bool checkright = true;
 	bool press = false;
 	bool click = false;
 	bool walk = false;
-	void anima(int *left,int *top, bool *selectsword, int *width, int *height, float *y, bool *fencing) {
+	Sounds sounds;
+	void anima(int *left,int *top, bool *selectsword, int *width, int *height, float *y, bool *fencing, bool checkleft, bool checkright) {
 		//fencing
-		if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && *selectsword) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F) && *selectsword && !*fencing) {
 			if (!click) {
+				sounds.fencing_effect();
 				if (checkright) {
 					*left = 1;
 				}
@@ -28,7 +29,7 @@ public:
 			click = true;
 		}
 		//walk left
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !*fencing) {
+		else if (checkleft && !*fencing && sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
 			if (!press) {
 				if (*selectsword) {
 					*left = 3142;
@@ -42,7 +43,6 @@ public:
 					*top = 365;
 					*y = 119;
 				}
-				checkright = false;
 			}
 			if (*selectsword) {
 				if (clock.getElapsedTime().asSeconds() > 0.1f) {
@@ -66,7 +66,7 @@ public:
 
 		}
 		//walk right
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !*fencing) {
+		else if (checkright && !*fencing && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 			if (!press) {
 				if (*selectsword) {
 					*left = 1;
@@ -80,7 +80,6 @@ public:
 					*width = 90;
 					*y = 119;
 				}
-				checkright = true;
 			}
 			if (*selectsword) {
 				if (clock.getElapsedTime().asSeconds() > 0.1f) {

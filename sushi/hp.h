@@ -5,52 +5,62 @@
 
 class Hp_Enemy {
 public:
-	float width = 100;
+	float width = 75;
+	float width_const = 75;
 
-	Hp_Enemy(float x, float y) {
+	Hp_Enemy(sf::Sprite sprite) {
+		float position = (sprite.getGlobalBounds().width - width_const) / 2;
+		float x = sprite.getPosition().x - position;
+		float y = sprite.getPosition().y - 10;
+
 		red.setPosition(sf::Vector2f(x,y));
-		red.setSize(sf::Vector2f(width, heigh));
+		red.setSize(sf::Vector2f(width_const, heigh));
 		red.setFillColor(sf::Color::Red);
 
 		black.setPosition(sf::Vector2f(x - 5, y - 5));
-		black.setSize(sf::Vector2f(width + 10, heigh + 10));
+		black.setSize(sf::Vector2f(width_const + 10, heigh + 10));
 		black.setFillColor(sf::Color::Black);
-
-		shadow.setPosition(sf::Vector2f(x, y + 15));
-		shadow.setSize(sf::Vector2f(width, heigh - 15));
-		shadow.setFillColor(sf::Color::Color(100, 0, 0, 255));
 	};
 
 	void draw(sf::RenderWindow &window) {
 		if (width > 0) {
 			window.draw(black);
 			window.draw(red);
-			window.draw(shadow);
 		}
 	}
 
 	void move(sf::Vector2f velocity) {
 		red.move(velocity);
 		black.move(velocity);
-		shadow.move(velocity);
 	}
 
 	void damage(float damage) {
 		if (damage >= width || width == 0) {
 			red.setSize(sf::Vector2f(0, heigh));
-			shadow.setSize(sf::Vector2f(0, heigh - 15));
 			width = 0;
 		}
 		else {
 			red.setSize(sf::Vector2f(width - damage, heigh));
-			shadow.setSize(sf::Vector2f(width - damage, heigh - 15));
 		}
 		width -= damage;
+	}
+
+	void setup(sf::Sprite sprite) {
+		float position = (sprite.getGlobalBounds().width - width_const) / 2;
+		float x = sprite.getPosition().x + position;
+		float y = sprite.getPosition().y - 10;
+
+		red.setPosition(sf::Vector2f(x, y));
+		black.setPosition(sf::Vector2f(x - 5, y - 5));
+	}
+
+	void reset() {
+		width = 75;
+		red.setSize(sf::Vector2f(width_const, heigh));
 	}
 
 private:
 	sf::RectangleShape red;
 	sf::RectangleShape black;
-	sf::RectangleShape shadow;
-	float heigh = 20;
+	float heigh = 15;
 };
